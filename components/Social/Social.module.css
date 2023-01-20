@@ -1,0 +1,11 @@
+.social_link {
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  font-size: 23px;
+  color: #64ffda;
+  transition: all 0.15s ease;
+}
+.social_link :hover {
+  color: white;
+  transform: translate(0px, -4px);
+}

@@ -1,0 +1,45 @@
+.about {
+  background-color: #0a192f;
+  z-index: 100;
+}
+.about .about_main {
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about_main .profileImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  border-radius: 2px;
+}
+.about .about_main .text h2 {
+  color: #ccd6f6;
+}
+.about .about_main .text p {
+  color: #ccd6f6;
+  font-size: 17px;
+}
+.about .about_main .text .expertise {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.about .about_main .text ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+  color: #ccd6f6;
+  list-style-type: square;
+}
+.about .about_main .text ul li {
+  margin-bottom: 3px;
+}/*# sourceMappingURL=About.module.css.map */
