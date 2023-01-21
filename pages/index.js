@@ -2,7 +2,6 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import About from "@/components/About/About";
-import Projects from "@/components/Projects/Projects";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header/Header";
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
         <Navbar />
         <Header/>
         <About/>
-        <Projects/>
         <Footer/>
       </main>
     </>
