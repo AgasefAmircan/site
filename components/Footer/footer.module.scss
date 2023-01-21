@@ -43,6 +43,25 @@
             p {
               text-decoration: underline;
             }
+            .say_btn{
+              color: #64ffda;
+              background-color: transparent;
+              border: 1px solid #64ffda;
+              border-radius: 4px;
+              padding: 1.25rem 1.75rem;
+              font-size: 14px;
+              font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+              line-height: 1;
+              text-decoration: none;
+              cursor: pointer;
+              transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+              margin-top: 0px;
+              margin-bottom: 26px;
+            }
+            .say_btn:hover{
+              background-color: rgba(100,255,218,0.1);
+              outline: none;
+            }
           }
         }
   

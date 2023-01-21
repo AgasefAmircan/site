@@ -13,14 +13,13 @@ const Footer = () => {
           <div className={styles.footer_left}>
             <h1>Agasef</h1>
             <p>
-              I'm a software developer. I have a solid understanding of both
-              front-end and back-end technologies and a good deal of experience
-              developing web applications.
+              My inbox is always open. Whether you have a question or just want
+              to say hi, I’ll try my best to get back to you!
             </p>
 
             <div className={styles.footer_contact}>
-              <Link href="mailto:gmail.com" target="_blank">
-                <p>agasefemircanov@gmail.com</p>
+              <Link href="mailto:agasefemircanov@gmail.com" target="_blank">
+                <button className={styles.say_btn}>Say hi</button>
               </Link>
               <SocialIcon />
             </div>
