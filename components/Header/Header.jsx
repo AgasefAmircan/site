@@ -35,7 +35,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <Image src={headerBg} className={styles.header_bg} style={{'width':660,"height":378}} />
+      <Image src={headerBg} className={styles.header_bg} style={{'width':660,"height":378}} alt="Software Engineer" />
     </div>
   );
 };
