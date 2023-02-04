@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Head from "../Head/Head";
 import Project from "../Project/Project";
-import styles from "./projects.module.scss";
+import styles from "./projects.module.css";
 const Projects = ({ projects }) => {
   return (
     <div className={styles.projects}>

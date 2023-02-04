@@ -8,7 +8,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.header_main}>
         <div className={styles.header_main_left}>
-          <p className={styles.name}>Hello, I'm</p>
+          <p className={styles.name}>Hello, I&apos;m</p>
           <h1>Agasef Amircan.</h1>
           <div className={styles.header_animated_txt}>
             <TypeAnimation
@@ -29,7 +29,7 @@ const Header = () => {
           </div>
 
           <p>
-            I'm a full-stack developer. I have a solid understanding of both
+            I&apos;m a full-stack developer. I have a solid understanding of both
             front-end and back-end technologies and a good deal of experience
             developing web applications.
           </p>

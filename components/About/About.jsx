@@ -18,9 +18,9 @@ const About = ({pt,social}) => {
           layout="responsive"
         />
         <div className={style.text}>
-          <h2>Hi, I'm Agasef</h2>
+          <h2>Hi, I&apos;m Agasef</h2>
           <p>
-            Hi. I'm 20 and currently student. I'm open to new innovations and
+            Hi. I&apos;m 20 and currently student. I&apos;m open to new innovations and
             love learning new technologies. Highly motivated Front End Developer
             with experience in HTML/CSS,JavaScript, React. Adept at contributing
             to a highly collaborative work environment, finding solutions, and

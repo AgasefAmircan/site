@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Tilt from "react-tilt";
-import styles from "./project.module.scss";
+import styles from "./project.module.css";
 
 const Project = ({ project }) => {
   return (
@@ -11,7 +11,7 @@ const Project = ({ project }) => {
       {project.left ? (
         <div className={styles.l_t_r}>
           <div className={styles.l_t_r_txt}>
-            <Link href={`/projects/${project._id}`}>
+            <Link href={`/projects`}>
               <h2>{project.title}</h2>
             </Link>
             <span className={styles.iconss}>
@@ -53,7 +53,7 @@ const Project = ({ project }) => {
               />
             </Tilt>
           <div className={styles.r_t_l_txt}>
-            <Link href={`/projects/${project._id}`}>
+            <Link href={`/projects`}>
               <h2>{project.title}</h2>
             </Link>
             <span className={styles.iconss}>

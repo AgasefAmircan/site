@@ -30,6 +30,24 @@ export async function getStaticProps() {
     message: [
       {
         _id: "1",
+        title: "JobMaster -Job circular app",
+        detail:
+          "JobMaster is a job circular web application. It's only for the frontend design with fully responsive. People can find jobs from here by category and can hire a person for their personal and business needed. People can apply for a job. There is also a blog posts section. Users can get an idea of what other users got hired and their job experience by reading this article. People can hire a person on this website by visiting their profile. In the candidate profile, you can see their work experience and their skills. There is the process how to hire the candidate.",
+        images: [
+         "https://res.cloudinary.com/dfou0tzco/image/upload/v1675411227/jobmaster_srckz5.jpg"
+        ],
+        features: [
+          "Fully responsive webpages.",
+          "Filter and Search functionality",
+        ],
+        tools: ["Javascript","NextJS", "ReactJS", "SASS", "CSS3"],
+        liveLink: "https://jobmasternext.vercel.app/",
+        githubLink: "https://github.com/agasefamircan/jobmaster",
+        left: true,
+        __v: 0,
+      },
+      {
+        _id: "2",
         title: "Weblog",
         detail:
           "Weblog is similar to a social media application. This application is fully responsive. On this application authenticated users can post their travel stories and read about others' travel experiences.",
@@ -50,10 +68,10 @@ export async function getStaticProps() {
         liveLink: "https://weblog00.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
-        left: true,
+        left: false,
       },
       {
-        _id: "2",
+        _id: "3",
         title: "Rooms",
         detail:
           "Rooms is a MERN stack Hotel Booking application. Admin Dashboard. SSG & SSR with next.js. State management using Context-api. Search and filter functionality. Client-side & Server-side authentication.",
@@ -86,10 +104,10 @@ export async function getStaticProps() {
         liveLink: "https://rooms00.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
-        left: false,
+        left: true,
       },
       {
-        _id: "3",
+        _id: "4",
         title: "Admin Dashboard",
         detail:
           "React.js Admin Dashboard.  Content Management User Authorization and management. Security and Permissions. Viewing Data and editing. CRUD functionality or management. Dark & Light Mode. Client-side authentication & Image Upload.",
@@ -121,10 +139,10 @@ export async function getStaticProps() {
         liveLink: "https://react-admin-dashboard-virid.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
-        left: true,
+        left: false,
       },
       {
-        _id: "4",
+        _id: "5",
         title: "E-commerce Shop",
         detail:
           "An e-commerce web application. Users can find chiles on this website and they can order the products through it. I'm using context API for the state management and stripe as an online payment method.",
@@ -150,28 +168,6 @@ export async function getStaticProps() {
           "CSS",
         ],
         liveLink: "https://lucianaschiles.vercel.app/",
-        githubLink: "https://github.com/agasefamircan",
-        left: false,
-        __v: 0,
-      },
-      {
-        _id: "5",
-        title: "Finated -Job circular app",
-        detail:
-          "Finated is a job circular web application. It's only for the frontend design with fully responsive. People can find jobs from here by category and can hire a person for their personal and business needed. People can apply for a job. There is also a blog posts section. Users can get an idea of what other users got hired and their job experience by reading this article. People can hire a person on this website by visiting their profile. In the candidate profile, you can see their work experience and their skills. There is the process how to hire the candidate.",
-        images: [
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672552664/samples/ecommerce/Screenshot_from_2023-01-01_11-55-22_qqtuyi.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672552664/samples/ecommerce/Screenshot_from_2023-01-01_11-55-34_cwtpmw.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672552664/samples/ecommerce/Screenshot_from_2023-01-01_11-55-55_alusxo.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672552663/samples/ecommerce/Screenshot_from_2023-01-01_11-56-09_seud3u.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672552663/samples/ecommerce/Screenshot_from_2023-01-01_11-56-52_nrkk4h.png",
-        ],
-        features: [
-          "Fully responsive webpages.",
-          "Filter and Search functionality",
-        ],
-        tools: ["Javascript", "ReactJS", "SASS", "CSS3"],
-        liveLink: "https://finated.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         left: true,
         __v: 0,

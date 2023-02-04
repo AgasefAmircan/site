@@ -1,9 +1,8 @@
-import React from 'react'
 import Navbar from '@/components/Navbar/Navbar'
 import Head from '@/components/Head/Head'
 import Projects from '@/components/Projects/Projects'
 import Footer from '@/components/Footer/Footer'
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <div>
         <Navbar/>
@@ -14,4 +13,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsPage
