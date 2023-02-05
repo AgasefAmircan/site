@@ -18,7 +18,6 @@ const Navbar = () => {
               style={{ width: 53, height: 47 }}
               height={53}
               width={47}
-              layout="responsive"
             />
             <div className="logotext" style={{'marginTop':11}}>
               <span>I&apos;m a programmer</span>

@@ -2,8 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["res.cloudinary.com", "cdn.jsdelivr.net","unsplash.com"],
+    domains: ['res.cloudinary.com']
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true'
+// })
+
+// module.exports = withBundleAnalyzer({
+//   env: {
+//       NEXT_PUBLIC_ENV: 'PRODUCTION', 
+//   },
+// })```

@@ -9,7 +9,7 @@ const Projects = ({ projects }) => {
       <Head title="Some Things I’ve Built" />
       <div className={styles.projects_main}>
         {projects.map((item) => {
-          return <Project key={item.id} project={item} />;
+          return <Project key={item._id} project={item} />;
         })}
         <div className={styles.see_all_btn}>
           <Link href="/projects">

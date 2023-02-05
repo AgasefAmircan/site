@@ -5,6 +5,7 @@
   height: 550px;
   z-index: 100;
 }
+
 .header .header_main {
   width: 100%;
   max-width: 1024px;
@@ -16,28 +17,33 @@
   position: relative;
   z-index: 10;
 }
+
 .header .header_main .header_main_left {
   overflow-x: hidden;
 }
+
 .header .header_main .header_main_left h1 {
   color: #ccd6f6;
   font-size: 60px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .header .header_main .header_main_left .name {
   color: #ccd6f6;
   font-size: 18px;
   font-weight: bold;
 }
+
 .header .header_main .header_main_left p {
   color: #ccd6f6;
   width: 60%;
 }
+
 .header .header_bg {
   position: absolute;
   top: 150px;
   right: 0;
   opacity: 0.15;
   z-index: 1;
-}/*# sourceMappingURL=Header.module.css.map */
+}

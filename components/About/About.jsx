@@ -15,7 +15,6 @@ const About = ({pt,social}) => {
           alt="Software Engineer"
           height={400}
           width={400}
-          layout="responsive"
         />
         <div className={style.text}>
           <h2>Hi, I&apos;m Agasef</h2>
