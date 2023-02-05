@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import style from "./About.module.css";
-import profilPic from "../../img/My_image.png";
+import profilPic from "../../img/im.jpg";
 import Head from "../Head/Head";
 import SocialIcon from "../Social/Social";
 const About = ({pt,social}) => {
@@ -31,14 +31,13 @@ const About = ({pt,social}) => {
             <li>Javascript/TypeScript</li>
             <li>React Js/Redux</li>
             <li>Next.js</li>
-            <li>Node.js</li>
+            <li>Node.js/Express.js</li>
             <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
+            <li>CSS/SCSS/SASS</li>
             <li>Material Design/Ant Design</li>
             <li>TailwindCss</li>
             <li>Styled-Components</li>
-            <li>Core Java</li>
+            <li>Core Java/Sql</li>
             <li>Bootstrap</li>
             <li>Git/GitHub</li>
             <li>Experience with Figma</li>

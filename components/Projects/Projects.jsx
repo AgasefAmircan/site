@@ -12,7 +12,7 @@ const Projects = ({ projects }) => {
           return <Project key={item._id} project={item} />;
         })}
         <div className={styles.see_all_btn}>
-          <Link href="/projects">
+          <Link href="https://github.com/agasefamircan" target="_blank">
             <button type="button">See All</button>
           </Link>
         </div>

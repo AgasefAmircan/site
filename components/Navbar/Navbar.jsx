@@ -28,14 +28,14 @@ const Navbar = () => {
           <Link href="/">
             <p className={router.path == "/" ? styles.active : ""}>Home</p>
           </Link>
-          <Link href="/about">
-            <p className={router.path == "/" ? styles.active : ""}>About</p>
+          <Link href="/">
+            <p className={router.path == "/about" ? styles.active : ""}>About</p>
           </Link>
-          <Link href="/projects">
+          <Link href="/">
             <p className={router.path == "/" ? styles.active : ""}>Projects</p>
           </Link>
-          <Link href="/contact">
-            <p className={router.path == "/" ? styles.active : ""}>Contact</p>
+          <Link href="/">
+            <p className={router.path == "/contact" ? styles.active : ""}>Contact</p>
           </Link>
         </div>
       </div>

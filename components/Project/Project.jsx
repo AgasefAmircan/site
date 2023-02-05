@@ -64,8 +64,12 @@ const Project = ({ project }) => {
                 <FaExternalLinkAlt size={20} className={styles.icon2} />
               </Link>
             </span>
-
             <p>{project.detail}</p>
+                    <p className={styles.r_t_l_tools}>
+                        {project.tools.slice(0, 5).map((tool, i) => {
+                            return <span key={i}>{tool},</span>
+                        })}
+                    </p>
           </div>
         </div>
       )}

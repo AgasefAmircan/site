@@ -48,9 +48,9 @@ export async function getStaticProps() {
       },
       {
         _id: "2",
-        title: "Weblog",
+        title: "MetaUI",
         detail:
-          "Meta UI is a light weight CSS library which helps you in developing fast , responsive and powerful interfaces.",
+          "MetaUI is a user interface platform that allows for seamless and intuitive interactions with digital devices. With MetaUI, businesses can improve the user experience by creating dynamic and interactive interfaces that are easy to navigate. Whether it's mobile applications, websites, or wearable devices, MetaUI provides the tools to create a modern and engaging user experience. Get started today with MetaUI and transform the way your users interact with technology.",
         images: [
           "https://res.cloudinary.com/dfou0tzco/image/upload/v1675620609/MetaUI_jl9rg2.jpg",
         ],
@@ -62,7 +62,7 @@ export async function getStaticProps() {
           "Search Functionality.",
           "Image Upload with Cloudinary.",
         ],
-        tools: ["React", "Javascript", "Nodejs", "MongoDB", "CSS", "SASS"],
+        tools: ["React", "Javascript", "CSS", "SASS"],
         liveLink: "https://meta-ui-app.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
@@ -70,11 +70,11 @@ export async function getStaticProps() {
       },
       {
         _id: "3",
-        title: "Rooms",
+        title: "Shopper App",
         detail:
-          "Rooms is a MERN stack Hotel Booking application. Admin Dashboard. SSG & SSR with next.js. State management using Context-api. Search and filter functionality. Client-side & Server-side authentication.",
+          "Shopper app is a mobile application designed for customers to shop for products from different stores in one place. It allows users to browse, compare prices and purchase products from various retailers, all from the convenience of their mobile device. The app aims to make shopping more convenient for customers by eliminating the need to visit multiple websites or stores to find the best deal. It provides a platform for various retailers to showcase their products and reach a wider audience.",
         images: [
-          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675620991/tweet_fagbs6.jpg",
+          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675627777/shopper_jueued.jpg",
         ],
         features: [
           "Admin Dashboard.",
@@ -87,30 +87,25 @@ export async function getStaticProps() {
           "Client-side and Server-side authentication.",
         ],
         tools: [
-          "Next.js",
           "React Js",
           "Javascript",
           "Nodejs",
-          "MongoDB",
           "SwiperJs",
-          "Cloudinary",
           "SASS",
+          "SCSS"
         ],
-        liveLink: "https://tweetgenerator.vercel.app/",
-        githubLink: "https://github.com/agasefamircan",
+        liveLink: "https://shopper-react-app.netlify.app/",
+        githubLink: "https://github.com/agasefamircan/shopper-react-app",
         __v: 0,
         left: true,
       },
       {
         _id: "4",
-        title: "Admin Dashboard",
+        title: "Tweet Generator",
         detail:
-          "React.js Admin Dashboard.  Content Management User Authorization and management. Security and Permissions. Viewing Data and editing. CRUD functionality or management. Dark & Light Mode. Client-side authentication & Image Upload.",
+          "Tweet Generator is an innovative tool that helps you create compelling and shareable tweets in seconds. With its intuitive interface, you can craft attention-grabbing messages, add hashtags, and even include images and videos. Whether you're looking to promote your brand, share your thoughts, or simply have fun, Tweet Generator has you covered. Start generating impactful tweets today and grow your online presence!",
         images: [
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216576/new%20folder/dashboard1_m2vqvp.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216576/new%20folder/dashboard2_ligqjl.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216576/new%20folder/dashboard3_kvdv1l.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216578/new%20folder/dashboard4_llxqbz.png",
+          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675620991/tweet_fagbs6.jpg",
         ],
         features: [
           "Content Management.",
@@ -124,15 +119,10 @@ export async function getStaticProps() {
         tools: [
           "React Js",
           "Javascript",
-          "Admin",
-          "Nodejs",
-          "MongoDB",
-          "Cloudinary",
-          "MUI",
           "SASS",
         ],
-        liveLink: "https://react-admin-dashboard-virid.vercel.app/",
-        githubLink: "https://github.com/agasefamircan",
+        liveLink: "https://tweetgenerator.vercel.app/",
+        githubLink: "https://github.com/agasefamircan/faketweetgenerator",
         __v: 0,
         left: false,
       },
