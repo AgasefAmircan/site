@@ -50,11 +50,9 @@ export async function getStaticProps() {
         _id: "2",
         title: "Weblog",
         detail:
-          "Weblog is similar to a social media application. This application is fully responsive. On this application authenticated users can post their travel stories and read about others' travel experiences.",
+          "Meta UI is a light weight CSS library which helps you in developing fast , responsive and powerful interfaces.",
         images: [
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216414/new%20folder/weblog1_ho3cow.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216411/new%20folder/weblog2_kmfxgo.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216409/new%20folder/weblog3_bngzay.png",
+          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675620609/MetaUI_jl9rg2.jpg",
         ],
         features: [
           "User can Create / Read / Update / Delete their post.",
@@ -65,7 +63,7 @@ export async function getStaticProps() {
           "Image Upload with Cloudinary.",
         ],
         tools: ["React", "Javascript", "Nodejs", "MongoDB", "CSS", "SASS"],
-        liveLink: "https://weblog00.vercel.app/",
+        liveLink: "https://meta-ui-app.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
         left: false,
@@ -76,10 +74,7 @@ export async function getStaticProps() {
         detail:
           "Rooms is a MERN stack Hotel Booking application. Admin Dashboard. SSG & SSR with next.js. State management using Context-api. Search and filter functionality. Client-side & Server-side authentication.",
         images: [
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216484/new%20folder/rooms1_ji54ie.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216484/new%20folder/rooms2_p6pekd.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216485/new%20folder/rooms3_krarlf.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1668216484/new%20folder/rooms4_nty9ih.png",
+          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675620991/tweet_fagbs6.jpg",
         ],
         features: [
           "Admin Dashboard.",
@@ -101,7 +96,7 @@ export async function getStaticProps() {
           "Cloudinary",
           "SASS",
         ],
-        liveLink: "https://rooms00.vercel.app/",
+        liveLink: "https://tweetgenerator.vercel.app/",
         githubLink: "https://github.com/agasefamircan",
         __v: 0,
         left: true,

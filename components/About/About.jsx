@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import style from "./About.module.css";
-import profilPic from "../../img/code.png";
+import profilPic from "../../img/My_image.png";
 import Head from "../Head/Head";
 import SocialIcon from "../Social/Social";
 const About = ({pt,social}) => {
@@ -15,6 +15,7 @@ const About = ({pt,social}) => {
           alt="Software Engineer"
           height={400}
           width={400}
+          layout="responsive"
         />
         <div className={style.text}>
           <h2>Hi, I&apos;m Agasef</h2>
@@ -27,15 +28,20 @@ const About = ({pt,social}) => {
           </p>
           <p className={style.skill}>Among my areas of expertise are:</p>
           <ul>
-            <li>Javascript</li>
-            <li>React Js</li>
+            <li>Javascript/TypeScript</li>
+            <li>React Js/Redux</li>
             <li>Next.js</li>
             <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>CSS3</li>
+            <li>HTML</li>
+            <li>CSS</li>
             <li>SASS</li>
-            <li>HTML5</li>
-            <li>Bootstap5</li>
+            <li>Material Design/Ant Design</li>
+            <li>TailwindCss</li>
+            <li>Styled-Components</li>
+            <li>Core Java</li>
+            <li>Bootstrap</li>
+            <li>Git/GitHub</li>
+            <li>Experience with Figma</li>
           </ul>
           {social && (
             <div style={{ paddingTop: "5px" }}>
