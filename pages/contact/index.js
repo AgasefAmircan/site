@@ -2,11 +2,10 @@ import Header from 'next/head';
 import About from '@/components/About/About';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
-import Head from '@/components/Head/Head';
 import Navbar from '@/components/Navbar/Navbar';
 import styles from '../../styles/about.module.scss';
 
-const about = () => (
+const index = () => (
     <div className={styles.about}>
         <Header>
             <title>About</title>
@@ -16,11 +15,10 @@ const about = () => (
     <div className={styles.about_page}>
         <Navbar />
         <About pt="70px" social={true} />
-        <Head title="Skills"/>
         <Contact />
         <Footer />
     </div>
     </div>
 );
 
-export default about;
+export default index;

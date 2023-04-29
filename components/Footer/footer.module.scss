@@ -91,3 +91,34 @@
       }
     }
   }
+  @media screen and (max-width: 576px) {
+    .footer_sec {
+      background-color: #0a192f;
+  
+      .footer_main {
+        padding-top: 50px;
+        padding-bottom: 10px;
+  
+        .footer_main_component {
+          padding-top: 20px;
+          display: grid;
+          grid-template-columns: 90%;
+          justify-content: start;
+  
+          .footer_right {
+            padding-top: 30px;
+          }
+        }
+  
+        .copyright {
+          text-align: center;
+          padding-top: 30px;
+  
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  

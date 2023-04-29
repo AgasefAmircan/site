@@ -52,3 +52,17 @@
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    .about {
+      .about_main {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+  
+        .profileImg {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }

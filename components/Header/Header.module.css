@@ -47,3 +47,33 @@
   opacity: 0.20;
   z-index: 9999;
 }
+
+@media screen and (max-width: 1124px) {
+  .header .header_bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 630px;
+  }
+  .header .header_main {
+    padding-top: 100px;
+  }
+  .header .header_main .header_main_left h1 {
+    font-size: 50px;
+  }
+  .header .header_main .header_main_left .header_animated_txt {
+    height: 250px;
+  }
+  .header .header_main .header_main_left p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .header {
+    height: 699px;
+  }
+}

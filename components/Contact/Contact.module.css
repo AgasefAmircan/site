@@ -29,7 +29,7 @@
   color: #ccd6f6c5;
 }
 
-.contact_sec .contact_sec_main .contact_form textarea {
+.contact_sec .contact_sec_main .contact_form textarea, .contact_sec .contact_sec_main .contact_form input {
   margin-top: 5px;
   display: block !important;
   margin-bottom: 15px;
@@ -46,6 +46,7 @@
 
 .contact_sec .contact_sec_main .contact_form .submit_btn {
   padding: 12px 45px;
+  width: 20%;
   border: none;
   border: 1px solid #64ffda;
   color: #252525;
@@ -61,4 +62,17 @@
 .contact_sec .contact_sec_main .contact_form .submit_btn:hover {
   background: none;
   color: #64ffda;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_sec .contact_sec_main .contact_form .contact_from_top {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact_sec .contact_sec_main .contact_form .submit_btn {
+    width: 100%;
+  }
 }
