@@ -14,7 +14,7 @@ const index = () => (
         </Header>
     <div className={styles.about_page}>
         <Navbar />
-        <About pt="70px" social={true} />
+        {/* <About pt="70px" social={true} /> */}
         <Contact />
         <Footer />
     </div>
