@@ -32,11 +32,11 @@ const Footer = () => {
             <Link href="/about">
               <p>About</p>
             </Link>
-            <Link href="/projects">
+            <Link href="/portfolio">
               <p>Portfolio</p>
             </Link>
-            <Link href="/blogs">
-              <p>Blogs</p>
+            <Link href="/contact">
+              <p>Contact</p>
             </Link>
           </div>
         </div>

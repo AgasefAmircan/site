@@ -3,9 +3,9 @@ import Head from "../Head/Head";
 import { sendContactForm } from "@/lib/api";
 import { useState } from "react";
 const Contact = () => {
-  const [name, setName] = useState("Agasaf");
-  const [surname, setsurName] = useState("Amircanov");
-  const [email, setEmail] = useState("test@gmail.com");
+  const [name, setName] = useState("");
+  const [surname, setsurName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("Helo.What are you doing 😶");
   const values = { name, surname, email, message };
 

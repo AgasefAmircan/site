@@ -3,7 +3,7 @@ import React from "react";
 import style from "./About.module.css";
 import profilPic from "../../img/im.jpg";
 import Head from "../Head/Head";
-const About = ({pt,social}) => {
+const About = ({pt}) => {
   return (
     <div className={style.about} style={{ paddingTop: pt ? `${pt}` : "0px" }}>
       <Head title="About Me" />
@@ -41,12 +41,6 @@ const About = ({pt,social}) => {
             <li>Experience with Figma ,Jira</li>
             <li>Core Java/Sql</li>
           </ul>
-          {/* {social && (
-            <div style={{ paddingTop: "5px" }}>
-              <p>Socials: </p>
-              <SocialIcon />
-            </div>
-          )} */}
         </div>
       </div>
     </div>
