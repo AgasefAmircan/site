@@ -126,37 +126,6 @@ export async function getStaticProps() {
         __v: 0,
         left: false,
       },
-      {
-        _id: "5",
-        title: "E-commerce Shop",
-        detail:
-          "An e-commerce web application. Users can find chiles on this website and they can order the products through it. I'm using context API for the state management and stripe as an online payment method.",
-        images: [
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672551839/samples/ecommerce/Screenshot_from_2023-01-01_11-41-43_uniafd.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672551836/samples/ecommerce/Screenshot_from_2023-01-01_11-41-51_cwpas1.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672551840/samples/ecommerce/Screenshot_from_2023-01-01_11-42-10_quf4ix.png",
-          "https://res.cloudinary.com/drbvugloj/image/upload/v1672551836/samples/ecommerce/Screenshot_from_2023-01-01_11-42-17_qdffs5.png",
-        ],
-        features: [
-          "State management using context API",
-          "Filter and Search functionality",
-          "Stripe for payment method",
-        ],
-        tools: [
-          "Next.JS",
-          "Javascript",
-          "ReactJS",
-          "Nodejs",
-          "MongoDB",
-          "Cloudinary",
-          "MUI",
-          "CSS",
-        ],
-        liveLink: "https://lucianaschiles.vercel.app/",
-        githubLink: "https://github.com/agasefamircan",
-        left: true,
-        __v: 0,
-      },
     ],
   };
   const projects = res.message;

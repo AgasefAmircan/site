@@ -1,38 +1,56 @@
 import styles from "./contact.module.scss";
 import Head from "../Head/Head";
-import { sendContactForm } from "@/lib/api";
-import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ser_id, pub_key, ter_id } from "@/env";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [surname, setsurName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("Helo.What are you doing 😶");
-  const values = { name, surname, email, message };
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(0);
 
-  const onSubmit = async (e) => {
+  const form = useRef();
+
+  const validateEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  };
+  const sendEmail = (e) => {
     e.preventDefault();
-    await sendContactForm(values);
-    console.log(
-      "Name : ",
-      name,
-      "Surname : ",
-      surname,
-      "Email :",
-      email,
-      "Message : ",
-      message
+    if (!validateEmail(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+    setLoading(1);
+    emailjs.sendForm(ser_id, ter_id, form.current, pub_key).then(
+      (result) => {
+        toast.success("Email sent successfully!");
+        setLoading(0);
+        setName("");
+        setsurName("");
+        setMessage("");
+        setEmail("");
+      },
+      (error) => {
+        toast.error("Failed to send email. Please try again later.");
+        setLoading(0);
+      }
     );
   };
   return (
     <div className={styles.contact_sec}>
       <Head title="Get In Touch" />
       <div className={styles.contact_sec_main}>
-        <form className={styles.contact_form}>
+        <form ref={form} onSubmit={sendEmail} className={styles.contact_form}>
           <label>First Name :</label>
           <input
             type="text"
             value={name}
-            name="message"
+            name="name"
             cols="55"
             rows="10"
             placeholder="First Name"
@@ -42,7 +60,7 @@ const Contact = () => {
           <label>Last Name :</label>
           <input
             value={surname}
-            name="message"
+            name="surname"
             type="text"
             cols="15"
             rows="10"
@@ -53,8 +71,8 @@ const Contact = () => {
           <label>Email :</label>
           <input
             value={email}
-            type="Email"
-            name="message"
+            type="email"
+            name="email"
             cols="15"
             rows="10"
             placeholder="Email"
@@ -73,15 +91,14 @@ const Contact = () => {
           ></textarea>
           <input
             type="submit"
-            value="Send"
-            onClick={onSubmit}
+            value={loading ? "Sending..." : "Send"}
+            disabled={loading}
             className={styles.submit_btn}
-            // disabled={!values.name || values.surname || values.email || values.message}
           />
         </form>
+        <ToastContainer />
       </div>
     </div>
   );
 };
-
 export default Contact;
