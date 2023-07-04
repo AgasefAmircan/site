@@ -15,7 +15,7 @@ const SocialIcon = () => {
         <Link href="https://twitter.com/agasefamircan" target="_blank">
             <FaTwitter className={styles.social_link} />
         </Link>
-        <Link href="https://web.facebook.com/agasef.amircanov" target="_blank">
+        <Link href="https://www.facebook.com/agasafamircan/" target="_blank">
             <FaFacebook className={styles.social_link} />
         </Link>
     </div>

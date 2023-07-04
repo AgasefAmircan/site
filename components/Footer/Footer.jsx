@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
 
             <div className={styles.footer_contact}>
-              <Link href="mailto:agasefemircanov@gmail.com" target="_blank">
+              <Link href="/contact">
                 <button className={styles.say_btn}>Say hi</button>
               </Link>
               <SocialIcon />
