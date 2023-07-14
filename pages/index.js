@@ -1,3 +1,4 @@
+import { useState,useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -6,6 +7,13 @@ import Header from "@/components/Header/Header";
 import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
 export default function Home({ projects }) {
+  const [loading,setLoading]=useState(1)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  },[]);
   return (
     <div className="container">
       <Head>
@@ -14,14 +22,15 @@ export default function Home({ projects }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="main">
+      {loading ? <div>Loading...</div> :
+       <main className="main">
         <Navbar />
         <Header />
         <About />
         <Projects projects={projects} />
         <Contact/>
         <Footer />
-      </main>
+      </main>}
     </div>
   );
 }
