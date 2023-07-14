@@ -1,0 +1,14 @@
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9bb8e4;
+}
+.content span:hover{
+    color: blue;
+    border-bottom: 1px solid #0a192f;
+}
+.home {
+    font-weight: bold;
+}
