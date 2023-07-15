@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -6,14 +6,15 @@ import About from "@/components/About/About";
 import Header from "@/components/Header/Header";
 import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
+import { Loading } from "@/components/Loading/Loading";
 export default function Home({ projects }) {
-  const [loading,setLoading]=useState(1)
+  const [loading, setLoading] = useState(1);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  },[]);
+  }, []);
   return (
     <div className="container">
       <Head>
@@ -22,15 +23,20 @@ export default function Home({ projects }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {loading ? <div>Loading...</div> :
-       <main className="main">
-        <Navbar />
-        <Header />
-        <About />
-        <Projects projects={projects} />
-        <Contact/>
-        <Footer />
-      </main>}
+      {loading ? (
+        <div>
+          <Loading />
+        </div>
+      ) : (
+        <main className="main">
+          <Navbar />
+          <Header />
+          <About />
+          <Projects projects={projects} />
+          <Contact />
+          <Footer />
+        </main>
+      )}
     </div>
   );
 }
@@ -43,13 +49,13 @@ export async function getStaticProps() {
         detail:
           "JobMaster is a job circular web application. It's only for the frontend design with fully responsive. People can find jobs from here by category and can hire a person for their personal and business needed. People can apply for a job. There is also a blog posts section. Users can get an idea of what other users got hired and their job experience by reading this article. People can hire a person on this website by visiting their profile. In the candidate profile, you can see their work experience and their skills. There is the process how to hire the candidate.",
         images: [
-         "https://res.cloudinary.com/dfou0tzco/image/upload/v1675411227/jobmaster_srckz5.jpg"
+          "https://res.cloudinary.com/dfou0tzco/image/upload/v1675411227/jobmaster_srckz5.jpg",
         ],
         features: [
           "Fully responsive webpages.",
           "Filter and Search functionality",
         ],
-        tools: ["Javascript","NextJS", "ReactJS", "SASS", "CSS3"],
+        tools: ["Javascript", "NextJS", "ReactJS", "SASS", "CSS3"],
         liveLink: "https://jobmasternext.vercel.app/",
         githubLink: "https://github.com/agasefamircan/jobmaster",
         left: true,
@@ -95,14 +101,7 @@ export async function getStaticProps() {
           "Filter by Min & Max price.",
           "Client-side and Server-side authentication.",
         ],
-        tools: [
-          "React Js",
-          "Javascript",
-          "Nodejs",
-          "SwiperJs",
-          "SASS",
-          "SCSS"
-        ],
+        tools: ["React Js", "Javascript", "Nodejs", "SwiperJs", "SASS", "SCSS"],
         liveLink: "https://shopper-react-app.netlify.app/",
         githubLink: "https://github.com/agasefamircan/shopper-react-app",
         __v: 0,
@@ -125,11 +124,7 @@ export async function getStaticProps() {
           "CRUD functionality or management.",
           "Dark & Light Mode",
         ],
-        tools: [
-          "React Js",
-          "Javascript",
-          "SASS",
-        ],
+        tools: ["React Js", "Javascript", "SASS"],
         liveLink: "https://tweetgenerator.vercel.app/",
         githubLink: "https://github.com/agasefamircan/faketweetgenerator",
         __v: 0,
