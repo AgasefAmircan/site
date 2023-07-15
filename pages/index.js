@@ -13,7 +13,7 @@ export default function Home({ projects }) {
   useEffect(() => { 
     setTimeout(() => {
       setLoading(0);
-    }, 2000);
+    },2000);
   }, []);
   return (
     <div className="container">

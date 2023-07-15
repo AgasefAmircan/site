@@ -3,3 +3,10 @@
     background-color: #0a192f;
     height: 100vh;
 }
+.bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 16%;
+}
