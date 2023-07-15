@@ -10,7 +10,7 @@ import { Loading } from "@/components/Loading/Loading";
 export default function Home({ projects }) {
   const [loading, setLoading] = useState(1);
 
-  useEffect(() => {
+  useEffect(() => { 
     setTimeout(() => {
       setLoading(false);
     }, 2000);
