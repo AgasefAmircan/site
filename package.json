@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.1.4",
+    "@ant-design/icons": "^5.1.4", 
     "@emailjs/browser": "^3.11.0",
     "@next/bundle-analyzer": "^13.1.6",
     "@next/font": "13.1.3",
